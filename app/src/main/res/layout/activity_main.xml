@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/coord"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nscroll"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/container">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/newrel">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/framelayout1"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg"
+                    android:alpha="0.70">
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relativelayout1"
+                    android:layout_marginTop="140dp">
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:layout_marginLeft="25dp"
+                        android:id="@+id/circle"
+                        android:scaleType="centerCrop"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/aaru"
+                        app:civ_border_color="#EEEEEE"
+                        app:civ_border_width="4dp"
+                        android:layout_gravity="start"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/linearlayout1"
+                        android:layout_toEndOf="@+id/circle"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/fb"
+                            android:onClick="fbpage"
+                            android:padding="10dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/fill_1"/>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:onClick="twitterpage"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/fill_4"/>
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:onClick="instapage"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/fill_1_3"/>
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/framelayout2"
+                            android:layout_gravity="center"
+                            android:layout_weight="1">
+
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:onClick="settings"
+                                android:src="@drawable/oval_7"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="settings"
+                                android:id="@+id/settings"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:src="@drawable/fill_73"/>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearlayout2"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/linearlayout1"
+                        android:layout_toRightOf="@+id/circle"
+                        android:layout_marginTop="5dp"
+                        android:padding="10dp"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <project.myblog.Widgets.BlogTextViewProximaR
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/spikes"
+                                android:textSize="18sp"
+                                android:textColor="#000" />
+
+                            <project.myblog.Widgets.BlogTextViewHelvetica
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center"
+                                android:text="@string/spikes_label"
+                                android:textSize="13sp"
+                                android:textColor="#9e9e9e" />
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <project.myblog.Widgets.BlogTextViewProximaR
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/followers"
+                                android:textSize="18sp"
+                                android:textColor="#000" />
+
+                            <project.myblog.Widgets.BlogTextViewHelvetica
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center"
+                                android:text="@string/followers_label"
+                                android:textSize="13sp"
+                                android:textColor="#9e9e9e" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <project.myblog.Widgets.BlogTextViewProximaR
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/following"
+                                android:textSize="18sp"
+                                android:textColor="#000" />
+
+                            <project.myblog.Widgets.BlogTextViewHelvetica
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_height="0dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/following_label"
+                                android:textSize="13sp"
+                                android:textColor="#9e9e9e" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearlayout3"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/linearlayout2"
+                        android:padding="5dp"
+                        android:layout_marginStart="30dp"
+                        android:weightSum="2">
+
+                        <project.myblog.Widgets.BlogTextViewProximaSb
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/name"
+                            android:id="@+id/namee"
+                            android:textSize="20sp"
+                            android:textColor="#000"/>
+
+                        <project.myblog.Widgets.BlogTextViewProximaR
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/designation"
+                            android:gravity="center_horizontal"
+                            android:textSize="16sp"
+                            android:textColor="#9e9e9e" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/linearlayout4"
+                        android:layout_below="@+id/linearlayout3"
+                        android:weightSum="4">
+
+                        <project.myblog.Widgets.BlogTextViewProximaR
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/caption"
+                            android:layout_weight="3.5"
+                            android:layout_gravity="center"
+                            android:text="@string/caption"
+                            android:textSize="16sp"
+
+                            android:textColor="#9e9e8e" />
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:onClick="edit"
+                            android:layout_weight="0.5"
+                            android:src="@drawable/fill_26" />
+
+                    </LinearLayout>
+
+                    <android.support.design.widget.BottomNavigationView
+                        android:layout_width="match_parent"
+                        android:layout_height="?android:attr/actionBarSize"
+                        android:id="@+id/bottomNavigation2"
+                        android:layout_marginTop="10dp"
+                        app:itemBackground="@drawable/bottom_nav2_selector"
+                        app:itemIconTint="@drawable/bottom_navigation2_color_selector"
+                        android:layout_below="@+id/linearlayout4"
+                        app:menu="@menu/bottom_navigation_main2"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/frame_container"
+                android:paddingBottom="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cd"
+            android:layout_alignParentBottom="true">
+
+            <android.support.design.widget.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:id="@+id/bottomNavigation"
+                android:layout_alignParentBottom="true"
+                app:itemIconTint="@drawable/bottom_navigation_color_selector"
+                app:itemBackground="@color/bottomnav"
+                app:menu="@menu/bottom_navigation_main"/>
+        </android.support.design.widget.CoordinatorLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

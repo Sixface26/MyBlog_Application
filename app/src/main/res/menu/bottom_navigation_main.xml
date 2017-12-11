@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/trending"
+        android:enabled="true"
+        android:icon="@drawable/fill_1_2"
+        android:title=""
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/search"
+        android:enabled="true"
+        android:icon="@drawable/fill_3"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/group"
+
+        android:title=""
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/fav"
+        android:enabled="true"
+        android:icon="@drawable/fill_22"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/fill_24"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+
+</menu>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">My Blog</string>
+
+    <!-- Toast for Description -->
+    <string name="desc_update">Description Updated</string>
+    <string name="desc_validation">Enter Description</string>
+
+    <!-- Toast for Favourites -->
+    <string name="added">Added to Favourites</string>
+    <string name="removed">Removed from Favourites</string>
+
+    <!-- Initial Description -->
+    <string name="description">I like Developing Android Apps</string>
+
+    <!-- Main Activity Components -->
+    <string name="spikes">1,056</string>
+    <string name="spikes_label">Spikes</string>
+    <string name="followers">650</string>
+    <string name="followers_label">Followers</string>
+    <string name="following">376</string>
+    <string name="following_label">Following</string>
+    <string name="name">Arumugam</string>
+    <string name="designation">Developer, Designer</string>
+    <string name="caption">I like developing android applications</string>
+
+    <!-- Strings for Activities TextViews -->
+    <string name="trending_label">Trending Activity</string>
+    <string name="searching_label">Searching Activity</string>
+    <string name="home_label">Home Activity</string>
+    <string name="fav_label">Favourite Activity</string>
+
+    <!-- Strings for Custom dialog -->
+    <string name="desc_title">Description</string>
+    <string name="desc_hint">Enter Description</string>
+    <string name="save_button">Save</string>
+
+    <!-- Strings for Fragment TextViews -->
+    <string name="fragment_two">Second Fragment</string>
+    <string name="fragment_three">Third Fragment</string>
+    <string name="fragment_four">Fourth Fragment</string>
+
+</resources>
