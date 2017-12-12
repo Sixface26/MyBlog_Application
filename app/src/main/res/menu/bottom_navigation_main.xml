@@ -20,7 +20,6 @@
         android:id="@+id/home"
         android:enabled="true"
         android:icon="@drawable/group"
-
         android:title=""
         app:showAsAction="ifRoom"/>
 
